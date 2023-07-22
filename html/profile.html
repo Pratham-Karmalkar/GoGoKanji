@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+#forum {
+  width: 680px;
+  background: white;
+  padding: 15px;
+  color: hsl(0, 0%, 15%);
+  margin: 0 auto;
+}
+#forum .thread {
+  width: 680px;
+  margin: 0 auto;
+}
+#forum .thread .profile {
+  width: calc(680px - 530px);
+  color: hsl(211, 100%, 42%);
+  font-weight: 600;
+  float: left;
+}
+#forum .thread .profile span {
+  display: block;
+}
+.profile[data-author] > span:first-child:after {
+  color: hsl(0, 0%, 15%);
+  content: '\00a0\00a0 Author';
+  display: inline-block;
+}
+#forum .thread .profile span.posts {
+  margin: 4px 0 0 0;
+  box-sizing: content-box;
+  display: inline-block;
+  background-image: -webkit-linear-gradient(top, hsl(211, 100%, 56%) 0%, hsl(211, 100%, 42%) 100%); 
+  background-image: linear-gradient(top, hsl(211, 100%, 56%) 0%, hsl(211, 100%, 42%) 100%);
+  border: 1px solid hsl(211, 100%, 40%);
+  border-radius: 2px;
+  color: hsl(0, 0%, 98%);
+  text-shadow: 0 1px 1px hsla(0, 0%, 0%, .35);
+  font-weight: 400;
+  padding: 2px 5px;
+}
+#forum .thread .post {
+  width: 500px;
+  float: right;
+}
+#forum .thread .post p {
+  margin: 0 0 10px 0;
+}
+#forum .fr-post {
+  width: calc(680px - 30px);
+  background-color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 75%);
+  border-radius: 3px;
+  padding: 15px;
+}
+#forum .fr-post:first-child {
+  margin: 0 0 10px 0;
+}
+#forum .fr-post:nth-child(2) {
+  margin: 0;
+  border-radius: 3px 3px 0 0;
+}
+#forum .fr-post:nth-child(n+3) {
+  border-radius: 0;
+  margin: -1px 0 0 0;
+}
+#forum .fr-post:last-child {
+  border-radius: 0 0 3px 3px;
+}
+#forum .opt-bar {
+  width: calc(680px - 30px);
+  display: block;
+  float: right;
+}
+#forum .opt-bar span.time {
+  font-size: 12px;
+  color: hsl(0, 0%, 50%);
+  font-style: italic;
+}
+.group:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.my-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Styling the button on hover */
+        .my-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    
+     
+
+    
+</body>
+</html>

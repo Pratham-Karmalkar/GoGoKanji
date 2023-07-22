@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            margin: 0;
+            font-family:  sans-serif;
+            font-size: 22px;
+            
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #3a3a3a;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        .navbar-logo {
+            color: #ffffff;
+            font-size: 26px;
+            text-decoration: none;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .navbar-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar-links {
+                margin-top: 10px;
+                display: none;
+                font-size: 40px;
+            }
+
+            .navbar-links.active {
+                display: flex;
+            }
+
+            .navbar-links a {
+                display: block;
+                text-align: center;
+            }
+
+            .navbar-hamburger {
+                cursor: pointer;
+                font-size: 24px;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.php" class="navbar-logo">GoGoKanji</a>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="index.php">Home</a>
+            <a href="profile.php">My Posts</a>
+            <a href="index.php?action=logout" name="logout">Logout</a>
+        </div>
+        <div class="navbar-hamburger" onclick="toggleNavbar()">
+            &#9776;
+        </div>
+    </div>
+
+    <script>
+        // Function to toggle navbar links for smaller screens
+        function toggleNavbar() {
+            var navbarLinks = document.getElementById("navbarLinks");
+            if (navbarLinks.style.display === "flex") {
+                navbarLinks.style.display = "none";
+            } else {
+                navbarLinks.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+</html>

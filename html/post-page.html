@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.blog-post {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.post-title {
+    color: #333;
+    text-align: center;
+    font-size: 26px;
+}
+
+.post-meta {
+    color: #888;
+    font-size: 14px;
+}
+
+.post-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    line-height: 1.6;
+    font-size: 22px;;
+}
+
+.comment-content{
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.comment-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.comment {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.comment-user {
+    display: flex;
+    align-items: center;
+}
+
+.comment-user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.comment-text {
+    margin-top: 5px;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.comment-form button:hover {
+    background-color: #0052a3;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .comment-section {
+        padding: 10px;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+    </style>
+    <main>
+        <article class="blog-post">
+            <h2 class="post-title"></h2>
+            <p class="post-meta" style="text-align: center;">Posted on July 22, 2023 by John Doe</p>
+            <p class="post-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at libero justo.
+                Vivamus cursus justo quis augue mollis sagittis. Duis consectetur blandit diam vel placerat.
+                Sed et sagittis purus, nec euismod elit. In a ex a neque auctor elementum.
+            </p>
+            <p class="post-content">
+                Proin sodales nec odio id tempus. Proin maximus eget tortor vel fringilla.
+                Aenean ac augue eget nisl accumsan malesuada. Nam sagittis, eros eu lobortis interdum,
+                mauris lectus eleifend turpis, non tincidunt felis lectus nec nunc.
+            </p>
+            <hr>
+            <br>
+            <br>
+
+           
+                
+
+            <h2 class="" style="text-align: left;">Comments</h2>
+            <article class="blog-post">
+                <div class="comment-section">
+ 
+                    <form action="#" method="post">
+                                <div class="comment-form">
+                       
+                                    <textarea name="comment" placeholder="Write your comment..." required></textarea>
+                                    <button type="submit" name="submit">Post Comment</button>
+                                </div>
+                            </form>
+                    </div>
+       
+                <article class="blog-post">
+                    <h3>User</h3>
+                    <p class="post-meta">Posted on July 22, 2023 by John Doe</p>
+                    <p class="comment-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at libero justo.
+                        Vivamus cursus justo quis augue mollis sagittis. Duis consectetur blandit diam vel placerat.
+                        Sed et sagittis purus, nec euismod elit. In a ex a neque auctor elementum.
+                    </p>
+                </article>
+            </article>
+
+        </article>
+      
+        
+    </main>
+
+</body>
+</html>
