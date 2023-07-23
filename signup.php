@@ -13,11 +13,10 @@ include("./html/signup.html");
     if(isset($_POST["submit"])){
         $username = $_POST["username"];
         $email = $_POST["email"];
-        $pass = $_POST["password"];    
+        $pass = $_POST["password"]; 
         
-    }
-
-    $flag = false;
+        
+        $flag = false;
         echo $flag; 
 
      //$username = filter_input(INPUT_POST,"usermame",FILTER_SANITIZE_SPECIAL_CHARS);
@@ -49,4 +48,8 @@ include("./html/signup.html");
 
     }
     mysqli_close($conn);
+        
+    }
+
+   
 ?>

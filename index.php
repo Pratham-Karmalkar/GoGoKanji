@@ -34,7 +34,7 @@
                 echo "<div class=\"fr-post group\">";
                   echo "<div class=\"profile\">";
                    echo " <span style=\"text-align: center;\">By, {$row["username"]}</span>";
-                   echo " <a href=\"post-page.php?id={$row["post_id"]}\" name=\"viewpost\"> <h1 style=\"color: black; text-align: center; margin-top: 20%;\">{$row["kanji_char"]}</h1></a>";
+                   echo " <a href=\"post-page.php?id={$row["post_id"]}\" name=\"viewpost\" style =\"text-decoration:none;\"> <h1 style=\"color: black; text-align: center; margin-top: 20%;\">{$row["kanji_char"]}</h1></a>";
                  echo " </div>";
                  echo " <div class=\"post\">";
                    echo " <p> {$row["kanji_desc"]}</p>";
