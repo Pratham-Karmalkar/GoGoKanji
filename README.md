@@ -13,6 +13,6 @@ GoGoKanji is  presents a forum like UI through which a user can post Kanjis of t
 - Inside the “htdocs” folder, paste the project folder (not the .zip one, but the extracted one).
 - Open your favorite browser; 
 - Then, go to URL “http://localhost/phpmyadmin“.
-- Download the sql file from the repository.
+- Download the "GoGoKanji_DB.sql" file from the repository.
 - Click on the “Import” tab and choose the database file (.sql) which is provided under the folder naming “DATABASE FILE”.
 - After setting up all these, go to URL “http://localhost/[ PROJECT_FOLDER_NAME ]/“
